@@ -12,10 +12,9 @@ Course: Masters in Data Analytics
 
 Duration: 17th September, 2018 - 14th December, 2018
 
-Video Link : https://www.youtube.com/watch?v=EHuSlnLt9tU&t=6s
+Video Link: https://www.youtube.com/watch?v=EHuSlnLt9tU&t=6s
 
-Tools & Languages Used
-
+Tools & Languages Used:
 1. Visual Studio 2017
 2. SQL Server Management Studio 2017
 3. SQL Server developer edition 2017
