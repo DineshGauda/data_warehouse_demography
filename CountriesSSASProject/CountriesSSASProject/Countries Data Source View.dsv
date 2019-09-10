@@ -1,0 +1,162 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="8f58b4d5-5ee8-4014-9207-0253378da691" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Countries Data Source View</ID>
+  <Name>Countries Data Source View</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Countries Data Source</DataSourceID>
+  <Schema>
+    <xs:schema id="Countries_x0020_Data_x0020_Source_x0020_View" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Countries_x0020_Data_x0020_Source_x0020_View" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="2771ff99-cd5b-44b6-a3c8-8a3e15e943b0">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Dim_Date" msprop:design-time-name="3cf80a2b-5a85-4000-9351-9fb4033e4051" msprop:DbTableName="Dim_Date" msprop:FriendlyName="Dim_Date" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Date_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="3f45a2d2-355e-446d-8ef4-de9c2cf84f98" msprop:DbColumnName="Date_ID" msprop:FriendlyName="Date_ID" type="xs:int" />
+                  <xs:element name="Decade" msprop:design-time-name="529e2f73-4822-4cdb-987f-47825ed82b8e" msprop:DbColumnName="Decade" msprop:FriendlyName="Decade" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Year" msprop:design-time-name="b00c0c7e-00e2-4092-8774-91e8d3bff1fa" msprop:DbColumnName="Year" msprop:FriendlyName="Year" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Gender" msprop:design-time-name="ae15a613-2156-422b-a7c5-c99d4e09ef37" msprop:DbTableName="Dim_Gender" msprop:FriendlyName="Dim_Gender" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Gender_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="2729c7ab-364a-4e43-aaf0-ce433d0fe959" msprop:DbColumnName="Gender_ID" msprop:FriendlyName="Gender_ID" type="xs:int" />
+                  <xs:element name="Gender" msprop:design-time-name="627e17b9-2f67-403c-88ff-fe7c489568d5" msprop:DbColumnName="Gender" msprop:FriendlyName="Gender" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Location" msprop:design-time-name="e18c838d-0fc5-4099-99f8-e439d4029529" msprop:DbTableName="Dim_Location" msprop:FriendlyName="Dim_Location" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Location_ID" msprop:design-time-name="bdc79d47-ed53-4d26-8610-0b76726068a5" msprop:DbColumnName="Location_ID" msprop:FriendlyName="Location_ID" type="xs:int" />
+                  <xs:element name="Country" msprop:design-time-name="e45f8cca-524d-4870-b049-b2e4c25a7052" msprop:DbColumnName="Country" msprop:FriendlyName="Country" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Region" msprop:design-time-name="656cc062-6036-4c8a-befc-8475a6cb00c7" msprop:DbColumnName="Region" msprop:FriendlyName="Region" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Continent" msprop:design-time-name="a0d9a8a7-8a23-4e2c-b60b-026ad4f442cd" msprop:DbColumnName="Continent" msprop:FriendlyName="Continent" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Fact" msprop:design-time-name="b2bad487-ff03-4f89-a5c7-b9e254dc6ae8" msprop:DbTableName="Fact" msprop:FriendlyName="Fact" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Fact_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="678f07c1-9d75-45dc-8ee3-bcd50c67d82f" msprop:DbColumnName="Fact_ID" msprop:FriendlyName="Fact_ID" type="xs:int" />
+                  <xs:element name="Date_ID" msprop:design-time-name="109dcc09-d745-4dfa-9345-0958388959fc" msprop:DbColumnName="Date_ID" msprop:FriendlyName="Date_ID" type="xs:int" minOccurs="0" />
+                  <xs:element name="Location_ID" msprop:design-time-name="3c5564a4-c0bb-4396-b1a2-6bbd1117ab37" msprop:DbColumnName="Location_ID" msprop:FriendlyName="Location_ID" type="xs:int" minOccurs="0" />
+                  <xs:element name="Gender_ID" msprop:design-time-name="5c4e8940-beb9-44e5-8e69-8c1f91a559d7" msprop:DbColumnName="Gender_ID" msprop:FriendlyName="Gender_ID" type="xs:int" minOccurs="0" />
+                  <xs:element name="Literacy_x0020_Rate" msprop:design-time-name="71413dd5-797c-4d2e-9279-8b1da9b6a097" msprop:DbColumnName="Literacy Rate" msprop:FriendlyName="Literacy Rate" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="Fertility_x0020_Rate" msprop:design-time-name="8f2527f5-c7d9-45ee-b96d-24fa8e34bf87" msprop:DbColumnName="Fertility Rate" msprop:FriendlyName="Fertility Rate" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="GDP" msprop:design-time-name="48c097ec-1b71-466c-bed8-ab1f7a0af3da" msprop:DbColumnName="GDP" msprop:FriendlyName="GDP" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="Infant_x0020_Mortality" msprop:design-time-name="867c74a9-9162-41bb-a233-bc3d446501c9" msprop:DbColumnName="Infant Mortality" msprop:FriendlyName="Infant Mortality" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="Life_x0020_Expectancy_x0020_Rate" msprop:design-time-name="44e2c0b2-7ae4-46e2-b2b1-85e700a62d7c" msprop:DbColumnName="Life Expectancy Rate" msprop:FriendlyName="Life Expectancy Rate" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="Worldwide_x0020_Life_x0020_Expectancy_x0020_Rate" msprop:design-time-name="f2128c58-5c99-4e56-9222-764390066dad" msprop:DbColumnName="Worldwide Life Expectancy Rate" msprop:FriendlyName="Worldwide Life Expectancy Rate" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="Population" msprop:design-time-name="48074c7e-1602-4c57-b17a-3714677bcc80" msprop:DbColumnName="Population" msprop:FriendlyName="Population" type="xs:decimal" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Date" />
+          <xs:field xpath="Date_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Gender_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Gender" />
+          <xs:field xpath="Gender_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Location_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Location" />
+          <xs:field xpath="Location_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Fact_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="Fact_ID" />
+        </xs:unique>
+        <xs:keyref name="Date_ID" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="Date_ID" />
+        </xs:keyref>
+        <xs:keyref name="Gender_ID" refer="dbo_Dim_Gender_Constraint1">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="Gender_ID" />
+        </xs:keyref>
+        <xs:keyref name="Location_ID" refer="dbo_Dim_Location_Constraint1">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="Location_ID" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Countries_x0020_Data_x0020_Source_x0020_View xmlns="" />
+  </Schema>
+</DataSourceView>

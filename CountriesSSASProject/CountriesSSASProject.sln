@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "CountriesSSASProject", "CountriesSSASProject\CountriesSSASProject.dwproj", "{D6F3A1A6-F855-4CE2-9735-983A4499980F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6F3A1A6-F855-4CE2-9735-983A4499980F}.Development|Default.ActiveCfg = Development
+		{D6F3A1A6-F855-4CE2-9735-983A4499980F}.Development|Default.Build.0 = Development
+		{D6F3A1A6-F855-4CE2-9735-983A4499980F}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {648BC19C-3BE3-4CE4-8F86-E42F2ECE79F9}
+	EndGlobalSection
+EndGlobal
