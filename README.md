@@ -2,9 +2,8 @@
 
 This project is a part of the continuous assessment for Data warehouse and Business Intelligence module of Masters in Data Analytics course at National College Of Ireland where we were asked to architect, populate and explore a Data Warehouse for Business Intelligence.
 
-"Data Warehouse & Business Intelligence Project on Demography"
-
 PROJECT DETAILS
+
 Module Name: Datawarehouse & Business Intelligence
 
 College: National College of Ireland
