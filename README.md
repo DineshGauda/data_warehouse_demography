@@ -21,3 +21,9 @@ This project is a part of the continuous assessment for Data warehouse and Busin
 4. Tableau Desktop Student's License
 5. R programming
 6. R Studio
+
+**Steps to run the project**
+1. Load 'CountriesSSISProject' as Integration Project in Visual Studio.
+2. Load 'CountriesSSASProject' as Multidimensional project in Visual Studio.
+3. Run 'CountriesSSISProject' and then 'CountriesSSASProject' in Visual Studio.
+
