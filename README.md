@@ -26,4 +26,6 @@ This project is a part of the continuous assessment for Data warehouse and Busin
 1. Load 'CountriesSSISProject' as Integration Project in Visual Studio.
 2. Load 'CountriesSSASProject' as Multidimensional project in Visual Studio.
 3. Run 'CountriesSSISProject' and then 'CountriesSSASProject' in Visual Studio.
+4. BI.twb contains Data Visualisation sheets which demonstrates three non-trivial business queries answered on the the deployed OLAP cube.
+
 
